@@ -1,0 +1,28 @@
+# ===============================
+# Brain Tumor Prediction Project
+# ===============================
+
+# Core ML / Deep Learning
+tensorflow==2.12.0
+keras==2.12.0
+numpy==1.24.3
+pandas==1.5.3
+scikit-learn==1.2.2
+h5py==3.8.0
+
+# Image Processing
+opencv-python==4.7.0.72
+Pillow==9.5.0
+
+# Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+livelossplot==0.5.5
+tqdm==4.65.0
+
+# Interactive / UI
+ipywidgets==8.0.6
+Flask==2.3.2
+
+# Optional utilities
+requests==2.31.0
