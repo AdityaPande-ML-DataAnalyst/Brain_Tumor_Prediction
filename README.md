@@ -60,50 +60,57 @@ A CNN model trained on four tumor categories provides predictions through both:
 - Confusion matrix & classification report visualization  
 ###Confusion Matrix
 <p align="center">
+  <img src="static\Screenshot 2025-11-09 020148.png" width="600" alt="Confusion Matrix">
   <img src="static\Screenshot 2025-11-09 020513.png" width="600" alt="Confusion Matrix">
 </p>
 
 ---
-
-## 🗂️ Folder Structure
+## 📂 Folder Structure
+<pre><code>
 Brain_Tumor_Prediction/
 │
-├── app.py # Flask web application
-├── cnn.py # CNN model training script
-├── cnnacc.py # Model evaluation & accuracy visualization
-├── preprocessing.py # Data preprocessing script
-├── Home.py # GUI launcher using Tkinter
+├── app.py                 # Flask web application
+├── cnn.py                 # CNN model training script
+├── cnnacc.py              # Model evaluation & accuracy visualization
+├── preprocessing.py       # Data preprocessing script
+├── Home.py                # GUI launcher using Tkinter
 │
-├── braintumor.h5 # Trained model (main)
-├── bt.h5 # Alternate model
-├── bt1.h5 # Alternate model
-├── dataset.xlsx # Excel metadata file (image paths & labels)
+├── braintumor.h5          # Trained model (main)
+├── bt.h5                  # Alternate model
+├── bt1.h5                 # Alternate model
+├── dataset.xlsx           # Image metadata file (paths & labels)
 │
-├── Training/ # Training dataset
-│ ├── glioma_tumor/
-│ ├── meningioma_tumor/
-│ ├── pituitary_tumor/
-│ └── no_tumor/
+├── Training/
+│   ├── glioma_tumor/
+│   ├── meningioma_tumor/
+│   ├── pituitary_tumor/
+│   └── no_tumor/
 │
-├── Testing/ # Testing dataset
-│ ├── glioma_tumor/
-│ ├── meningioma_tumor/
-│ ├── pituitary_tumor/
-│ └── no_tumor/
+├── Testing/
+│   ├── glioma_tumor/
+│   ├── meningioma_tumor/
+│   ├── pituitary_tumor/
+│   └── no_tumor/
 │
-├── static/ # Flask static files
-│ ├── css/
-│ ├── js/
-│ ├── img/
-│ ├── brain.jpg
-│ └── braintumor1.webp
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   │   ├── brain.jpg
+│   │   └── braintumor1.webp
 │
-├── templates/ # HTML templates for Flask
-│ ├── index.html
-│ └── result.html
+├── templates/
+│   ├── index.html
+│   └── result.html
 │
-├── uploads/ # Uploaded MRI images (auto-created at runtime)
-├── fonts/ # Optional UI fonts
+├── uploads/
+├── fonts/
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
+</code></pre>
+
 
 
 ## Installation
@@ -126,9 +133,8 @@ This project uses an Excel file (dataset.xlsx) to store image paths and labels f
 | **Training/pituitary_tumor/image004.jpg** | pituitary_tumor | 
 
 
-## How to Run
-
 ## folder should be 
+<pre><code>
 Training/
 │   ├── glioma_tumor/
 │   ├── meningioma_tumor/
@@ -139,7 +145,7 @@ Testing/
 │   ├── meningioma_tumor/
 │   ├── pituitary_tumor/
 │   └── no_tumor/
-
+</code></pre>
 
 ##Technologies use 
 Category | Tools |
